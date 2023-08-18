@@ -1,9 +1,14 @@
+<script>
+    const githubLogoPath = '/github-logo.svg'
+</script>
+
 <!-- Footer.svelte -->
 <footer class="footer">
-    <p>© Boz 2023</p>
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <p>© Boz 2023</p> 
   </footer>
   
-  <style>
+<style>
     .footer {
       position: absolute;
       bottom: 0;
@@ -15,7 +20,7 @@
       margin: 0; /* Reset margin */
       color: #eee;
     }
-    
+
     /* Reset default margin and padding for the body element */
 
   </style>
