@@ -16,6 +16,8 @@
     };
 </script>
 
+<title>Anime Quotes</title>
+
 <h1>Random Anime Quote</h1>
 
 <!-- svelte-ignore a11y-missing-attribute -->
