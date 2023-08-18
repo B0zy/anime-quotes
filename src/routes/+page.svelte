@@ -94,5 +94,6 @@
         border-radius: 2rem;
         border: 0;
         padding: 5px;
+        cursor: pointer;
     }
 </style>
