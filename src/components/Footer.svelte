@@ -1,7 +1,3 @@
-<script>
-    const githubLogoPath = '/github-logo.svg'
-</script>
-
 <!-- Footer.svelte -->
 <footer class="footer">
     <!-- svelte-ignore a11y-missing-attribute -->
