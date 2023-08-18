@@ -5,7 +5,8 @@
 <!-- Footer.svelte -->
 <footer class="footer">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <p>© Boz 2023</p> 
+    <p>  <a href="https://github.com/B0zy"><i class="fab fa-github" style='font-size:21px'></i></a>
+        © Boz 2023</p> 
   </footer>
   
 <style>
@@ -21,6 +22,22 @@
       color: #eee;
     }
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    i {
+        padding-right: 5px;
+        color: white;
+    }
+
+    i:hover {
+    color: #AEC6CF;
+    transition: 0.4s;
+    cursor: pointer;
+    }
+ 
     /* Reset default margin and padding for the body element */
 
   </style>
