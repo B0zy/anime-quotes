@@ -1,9 +1,16 @@
 <script>
     import axios from 'axios'
+    import axiosRateLimit from 'axios-rate-limit';
     let quotes = []
 
+    // Create an instance of Axios with rate limiting
+    const apiLimiter = axiosRateLimit(axios.create(), {
+    maxRequests: 2, // Maximum 2 requests
+    perMilliseconds: 60000, // per 60 seconds (1 minute)
+    });
+
     const fetchData = () => {
-        axios.get('https://animechan.xyz/api/random')
+        apiLimiter.get('https://animechan.xyz/api/random')
         .then(res => {
             console.log(res.data); // Check the structure of the response data
             console.log(Array.isArray(res.data)); // Check if it's an array
